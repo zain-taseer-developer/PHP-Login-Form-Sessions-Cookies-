@@ -19,13 +19,8 @@ session_start();
         enctype="multipart/form-data"
       >
       <h1
-        style="
-          font-size: 22px;
-          color: #6e2a63;
-          font-weight: bold;
-          text-align: center;
-          margin-bottom:14px;
-        "
+        
+        class="loginHead"
       >
         LOGIN
       </h1>
