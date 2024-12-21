@@ -1,0 +1,55 @@
+<?php
+// procedurel way .....................................
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="newphplogin";
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+if($conn){
+  // echo "<h1>db connect</h1>";
+}
+else{
+  echo "connection fail hai".mysqli_connect_error();
+}
+
+
+
+
+
+
+// using object oriented    .................................................
+// $conn=new mysqli($servername,$username,$password,$dbname);
+// if($conn->connect_error){
+//   echo $conn->connect_error;
+// }
+
+
+// $sql="select * from newphplogintable where name='zain'";
+
+
+
+// $result=$conn->query($sql);
+
+// if($result->num_rows>0){
+  
+//   while($row=$result->fetch_assoc()){
+//   echo $row['name'];
+//   }
+// }
+
+//    PDO  using php data object way 
+
+// $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+// $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// $stmt = $pdo->query("SELECT * FROM newphplogintable WHERE name='zain'");
+// if($stmt->rowCount()>0){
+//   while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+//     echo "<p>Name: " . $row['name'] . "</p>";
+//     echo "<p>Password: " . $row['password'] . "</p>";
+// }
+// }
+
+// echo "<pre>";
+// print_r($stmt->rowCount());
+// echo "</pre>";
+?>

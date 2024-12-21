@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* width: 50vw; */
+  /* background-color: aqua; */
+  background: url(./images/search-bar-icon-search-3d-render-minimal-design-multicolor-background_41204-14142.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formPart {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.formLabel {
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.formInputs {
+  margin-top: 5px;
+  margin-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+}
+
+input[type="submit"] {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 6px;
+}
